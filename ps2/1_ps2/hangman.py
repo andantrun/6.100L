@@ -1,7 +1,7 @@
 # Problem Set 2, hangman.py
 # Name: An Dang
 # Collaborators: None
-# Time spent: 0:15
+# Time spent: 0:20
 
 import random
 import string
@@ -139,7 +139,9 @@ def hangman(secret_word, with_help):
     Follows the other limitations detailed in the problem write-up.
     """
     # FILL IN YOUR CODE HERE AND DELETE "pass"
-    pass
+    guesses = 10
+    print("Welcome to Hangman!")
+    print(f"I am thinking of a word that is {len(secret_word)} letters long.")
 
 
 
@@ -149,9 +151,9 @@ def hangman(secret_word, with_help):
 if __name__ == "__main__":
     # To test your game, uncomment the following three lines.
 
-    # secret_word = choose_word(wordlist)
-    # with_help = False
-    # hangman(secret_word, with_help)
+    secret_word = "tact"
+    with_help = False
+    hangman(secret_word, with_help)
 
     # After you complete with_help functionality, change with_help to True
     # and try entering "!" as a guess!
